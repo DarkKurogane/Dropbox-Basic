@@ -4,32 +4,176 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="master.css">
+    <script type="text/javascript" src="main.js">
+
+    </script>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+
     <title>Dropbox Basic (Free account) - Dropbox</title>
   </head>
   <body>
-    <header>
-      <nav>
-        <ul>
-          <li>logo</li>
-          <li>button</li>
+    <header class="header">
+      <nav class="header--box">
+        <ul class="header--box--nav">
+          <li>
+            <a href="#">
+              <img src="images/Glyph_blue.svg" alt="Dropbox logo" width="30px" height="28px;">
+            </a>
+          </li>
+          <li>
+            <button class="header--box--nav--list-item--try-button" type="button" name="try-dropbox-free">Try Dropbox free</button>
+          </li>
         </ul>
       </nav>
     </header>
 
     <main>
-      <section>
+      <section class="intro">
+
+        <article class="intro--content-box">
+          <h5>Dropbox Basic</h5>
+          <h1>Get a Dropbox free account</h1>
+          <p>Sign up for 2 GB of storage, and start accessing and sharing photos, documents, and other files from any device.</p>
+          <button type="button" name="sign-up" class="intro--content-box--sign-up">Sign up for free</button>
+          <p class="intro--content-box--question">Already have an account? <a href="#" class="intro--content-box--question--link">Sign in</a></p>
+
+        </article>
+
+        <div class="intro--image-container">
+          <img src="https://aem.dropbox.com/cms/content/dam/dropbox/www/en-us/dropbox-basics/CloudStorage_AllFiles@2x.gif" aria-hidden="false" alt="Free Dropbox account" class="c05-page-header-plank__image" width="990" height="800">
+        </div>
 
       </section>
 
-      <article>
+      <section class="features">
 
-      </article>
+        <article class="features--content-box">
+          <div class="features--content-box--image-container">
+            <img class="features--content-box--image-container--feature-image" src="https://aem.dropbox.com/cms/content/dam/dropbox/www/en-us/dropbox-basics/CloudStorage_MultipleDevices@2x%20(1).gif" aria-hidden="false" alt="Free online file storage" width="990" height="800">
+          </div>
+          <h2>Access files anywhere</h2>
+          <p>With Dropbox Basic, it’s easy to get to your files from multiple devices—computers, phones, and tablets—for free:</p>
+          <ul class="feature--content-box--feature-list">
+            <li class="feature--content-box--feature-list--list-item">Windows and Mac: Install our desktop app, and everything in your account will appear in the Dropbox folder on your computer.</li>
+            <li class="feature--content-box--feature-list--list-item">Web: Sign in to dropbox.com to access everything you’ve stored on Dropbox from any browser—no software installation required.</li>
+            <li class="feature--content-box--feature-list--list-item">iOS and Android: Take your files on the go with our mobile app, and preview over 175 file types from anywhere.</li>
+          </ul>
 
-      <section>
+          <div class="features--content-box--image-container">
+            <img class="features--content-box--image-container--feature-image" src="https://aem.dropbox.com/cms/content/dam/dropbox/www/en-us/dropbox-basics/FileBackup_Secure@2x.gif" aria-hidden="false" alt="Free file backup" width="990" height="800">
+          </div>
+          <h2>Back up files</h2>
+          <p>From photos and videos to presentations and tax paperwork, Dropbox Basic helps you keep all your most important—and irreplaceable—files safe:</p>
+          <ul class="feature--content-box--feature-list">
+            <li class="feature--content-box--feature-list--list-item">File sync: Back up anything by storing it in the Dropbox folder on your computer. And with our desktop and mobile apps, you can automatically upload photos and videos to Dropbox from your phone, camera, or SD card.</li>
+            <li class="feature--content-box--feature-list--list-item">File recovery: Accidentally deleted a file from your Dropbox? No problem. You can easily restore anything you’ve deleted in the past 30 days from dropbox.com.</li>
+            <li class="feature--content-box--feature-list--list-item">Version history: If you ever change your mind, you can roll a file back to any version saved to Dropbox in the past 30 days.
+            </li>
+          </ul>
+
+          <div class="features--content-box--image-container">
+            <img class="features--content-box--image-container--feature-image" src="https://aem.dropbox.com/cms/content/dam/dropbox/www/en-us/dropbox-basics/Sharing_AnyFile@2x.gif" aria-hidden="false" alt="Free file sharing" width="990" height="800">
+          </div>
+          <h2>Share and collaborate on files</h2>
+          <p>Copying files over to a USB stick and “file too big to attach” errors are a thing of the past. Dropbox Basic makes it easy to securely send large files to anyone, and collaborate easily on the files you share.</p>
+          <ul class="feature--content-box--feature-list">
+            <li class="feature--content-box--feature-list--list-item">Shared links: Easily create a link for any file in your Dropbox that you can paste into an email, chat, or text. Recipients won’t need a Dropbox account—they can click the link to view and download the file.</li>
+            <li class="feature--content-box--feature-list--list-item">File previews: Anyone visiting your shared links can preview over 175 file types and add comments—no special software required.</li>
+            <li class="feature--content-box--feature-list--list-item">Seamless collaboration: It’s hard to keep track of important attachments in a crowded inbox. Dropbox makes it easy to connect and collaborate, whether you’re sharing files with a friend or working with a large team.</li>
+          </ul>
+
+          <div class="features--content-box--accordion-box">
+            <button class="borderly" id="accordion1">Is Dropbox Basic right for me?</button>
+            <div id="panel">
+              <p class="panel-text">Dropbox Basic is our entry-level plan, offering 2 GB of space that you can use to store and access your files from multiple devices.</p>
+            </div>
+
+            <button class="borderly" id="accordion2">How much space does Dropbox Basic include?</button>
+            <div id="panel2">
+              <p class="panel-text">You can store 2 GB of files with Dropbox Basic. We also offer paid plans with 2 TB or more of storage.</p>
+            </div>
+
+            <button class="borderly" id="accordion3">Is Dropbox Basic secure?</button>
+            <div id="panel3">
+              <p class="panel-text">The security of your files is our top priority. Dropbox protects files in transit between our apps and our servers, and at rest. We’ve also created a privacy policy that clearly describes when we collect your information and the steps we take to protect it. In addition, we offer tools like two-step verification and an account security page where you can easily monitor linked devices, active web sessions, and third-party apps with access to your account. You can learn more about how we keep your files safe on our Security page.</p>
+            </div>
+
+            <button class="borderly" id="accordion4">What devices can you use Dropbox on?</button>
+            <div id="panel4">
+              <p class="panel-text">The Dropbox desktop app runs on Windows, Mac, and Linux operating systems. Apps are also available for iOS, Android, and Windows mobile devices. And you can transfer and download files from dropbox.com using most modern browsers. For more details, visit our help center article on system requirements.</p>
+            </div>
+
+            <button class="borderly" id="accordion5">How do I back up important files with Dropbox?</button>
+            <div id="panel5">
+              <p class="panel-text">You can easily back up files to Dropbox by installing our desktop and mobile apps, or by signing in to dropbox.com. With our desktop app installed, all you need to do is save files to the Dropbox folder on your computer. In our mobile app, you can upload files from your phone or tablet and use your device’s camera to scan documents to Dropbox. And on the web, you can drag and drop files from your desktop right into your browser to upload them to Dropbox.</p>
+            </div>
+
+            <button class="borderly" id="accordion6">Can I keep my work and personal files separate?</button>
+            <div id="panel6">
+              <p class="panel-text">Yes! Dropbox Business users can have both a personal and work Dropbox on any computer, mobile device, and on dropbox.com. This means you can keep your files separate and accessible from anywhere. To learn more, visit our help center article on connecting personal and work Dropbox accounts.</p>
+            </div>
+
+          </div>
+
+        </article>
 
       </section>
 
-      <footer>
+      <section class="get-free">
+
+        <article class="get-free--content-box">
+          <h3>Get a Dropbox free account</h3>
+          <button type="button" name="sign-up" class="intro--content-box--sign-up">Sign up for free</button>
+
+        </article>
+
+      </section>
+
+      <footer class="footer-nav">
+        <ul class="footer-nav--link-box">
+          <li class="footer-nav--link-box--column add-pad">
+            <h4>Dropbox</h4>
+            <a href="#">Desktop app</a>
+            <a href="#">Mobile apps</a>
+            <a href="#">Plans</a>
+            <a href="#">Security</a>
+            <a href="#">Features</a>
+            <a href="#">Resources</a>
+          </li>
+          <li class="footer-nav--link-box--column">
+            <h4>Products</h4>
+            <a href="#">Plus</a>
+            <a href="#">Professional</a>
+            <a href="#">Business</a>
+            <a href="#">Enterprise</a>
+          </li>
+          <li class="footer-nav--link-box--column">
+            <h4>Company</h4>
+            <a href="#">About us</a>
+            <a href="#">Jobs</a>
+            <a href="#">Press</a>
+            <a href="#">Investor relations</a>
+            <a href="#">Blog</a>
+          </li>
+          <li class="footer-nav--link-box--column">
+            <h4>Support</h4>
+            <a href="#">Help center</a>
+            <a href="#">Contact us</a>
+            <a href="#">Cookies</a>
+            <a href="#">Privacy and terms</a>
+            <a href="#">Sitemap</a>
+          </li>
+          <li class="footer-nav--link-box--column border-bottom">
+            <h4>Community</h4>
+            <a href="#">Developers</a>
+            <a href="#">Referrals</a>
+            <a href="#">Forum</a>
+          </li>
+        </ul>
+
+        <div class="sub-footer">
+          <button type="button" name="lang-selector" class="lang-selector">English (United States)</button>
+        </div>
 
       </footer>
     </main>
