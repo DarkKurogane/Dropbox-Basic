@@ -258,17 +258,12 @@ h2 {
   border-bottom: 0;
 }
 
-#panel/*,
-#panel2,
-#panel3,
-#panel4,
-#panel5,
-#panel6, {
+#panel {
   background-color: #fff;
   overflow: hidden;
   display: none;
 }
-*/
+
 #panel2 {
   background-color: #fff;
   overflow: hidden;
