@@ -17,8 +17,11 @@
         <ul class="header--box--nav">
           <li>
             <a href="#">
-              <img src="images/Glyph_blue.svg" alt="Dropbox logo" width="30px" height="28px;">
+              <img class="box-logo" src="images/Glyph_blue.svg" alt="Dropbox logo" width="30px" height="28px;">
             </a>
+          </li>
+          <li class="dropbox-logo">
+            <img src="images/Logo.svg" alt="Dropbox logo">
           </li>
           <li>
             <button class="header--box--nav--list-item--try-button" type="button" name="try-dropbox-free">Try Dropbox free</button>
@@ -40,17 +43,17 @@
         </article>
 
         <div class="intro--image-container">
-          <img src="https://aem.dropbox.com/cms/content/dam/dropbox/www/en-us/dropbox-basics/CloudStorage_AllFiles@2x.gif" aria-hidden="false" alt="Free Dropbox account" class="c05-page-header-plank__image" width="990" height="800">
+          <img class="intro--image-container--image" src="https://aem.dropbox.com/cms/content/dam/dropbox/www/en-us/dropbox-basics/CloudStorage_AllFiles@2x.gif" aria-hidden="false" alt="Free Dropbox account" class="c05-page-header-plank__image" width="990" height="800">
         </div>
 
       </section>
 
       <section class="features">
 
+        <div class="features--content-box--image-container">
+          <img class="features--content-box--image-container--feature-image" src="https://aem.dropbox.com/cms/content/dam/dropbox/www/en-us/dropbox-basics/CloudStorage_MultipleDevices@2x%20(1).gif" aria-hidden="false" alt="Free online file storage" width="990" height="800">
+        </div>
         <article class="features--content-box">
-          <div class="features--content-box--image-container">
-            <img class="features--content-box--image-container--feature-image" src="https://aem.dropbox.com/cms/content/dam/dropbox/www/en-us/dropbox-basics/CloudStorage_MultipleDevices@2x%20(1).gif" aria-hidden="false" alt="Free online file storage" width="990" height="800">
-          </div>
           <h2>Access files anywhere</h2>
           <p>With Dropbox Basic, it’s easy to get to your files from multiple devices—computers, phones, and tablets—for free:</p>
           <ul class="feature--content-box--feature-list">
@@ -58,10 +61,12 @@
             <li class="feature--content-box--feature-list--list-item">Web: Sign in to dropbox.com to access everything you’ve stored on Dropbox from any browser—no software installation required.</li>
             <li class="feature--content-box--feature-list--list-item">iOS and Android: Take your files on the go with our mobile app, and preview over 175 file types from anywhere.</li>
           </ul>
+        </article>
 
           <div class="features--content-box--image-container">
             <img class="features--content-box--image-container--feature-image" src="https://aem.dropbox.com/cms/content/dam/dropbox/www/en-us/dropbox-basics/FileBackup_Secure@2x.gif" aria-hidden="false" alt="Free file backup" width="990" height="800">
           </div>
+          <article class="features--content-box">
           <h2>Back up files</h2>
           <p>From photos and videos to presentations and tax paperwork, Dropbox Basic helps you keep all your most important—and irreplaceable—files safe:</p>
           <ul class="feature--content-box--feature-list">
@@ -70,10 +75,12 @@
             <li class="feature--content-box--feature-list--list-item">Version history: If you ever change your mind, you can roll a file back to any version saved to Dropbox in the past 30 days.
             </li>
           </ul>
+        </article>
 
-          <div class="features--content-box--image-container">
+        <div class="features--content-box--image-container">
             <img class="features--content-box--image-container--feature-image" src="https://aem.dropbox.com/cms/content/dam/dropbox/www/en-us/dropbox-basics/Sharing_AnyFile@2x.gif" aria-hidden="false" alt="Free file sharing" width="990" height="800">
-          </div>
+        </div>
+        <article class="features--content-box">
           <h2>Share and collaborate on files</h2>
           <p>Copying files over to a USB stick and “file too big to attach” errors are a thing of the past. Dropbox Basic makes it easy to securely send large files to anyone, and collaborate easily on the files you share.</p>
           <ul class="feature--content-box--feature-list">
@@ -81,8 +88,9 @@
             <li class="feature--content-box--feature-list--list-item">File previews: Anyone visiting your shared links can preview over 175 file types and add comments—no special software required.</li>
             <li class="feature--content-box--feature-list--list-item">Seamless collaboration: It’s hard to keep track of important attachments in a crowded inbox. Dropbox makes it easy to connect and collaborate, whether you’re sharing files with a friend or working with a large team.</li>
           </ul>
-
-          <div class="features--content-box--accordion-box">
+        </article>
+        <div class="features--accordion-box">
+        <div class="features--content-box--accordion-box">
             <button class="borderly" id="accordion1">Is Dropbox Basic right for me?</button>
             <div id="panel">
               <p class="panel-text">Dropbox Basic is our entry-level plan, offering 2 GB of space that you can use to store and access your files from multiple devices.</p>
@@ -114,8 +122,7 @@
             </div>
 
           </div>
-
-        </article>
+        </div>
 
       </section>
 
@@ -123,7 +130,7 @@
 
         <article class="get-free--content-box">
           <h3>Get a Dropbox free account</h3>
-          <button type="button" name="sign-up" class="intro--content-box--sign-up">Sign up for free</button>
+          <button type="button" name="sign-up" class="intro--content-box--sign-up sign-up-bottom">Sign up for free</button>
 
         </article>
 
@@ -131,7 +138,7 @@
 
       <footer class="footer-nav">
         <ul class="footer-nav--link-box">
-          <li class="footer-nav--link-box--column add-pad">
+          <li class="footer-nav--link-box--column add-pad border-bottom-pc">
             <h4>Dropbox</h4>
             <a href="#">Desktop app</a>
             <a href="#">Mobile apps</a>
@@ -163,7 +170,7 @@
             <a href="#">Privacy and terms</a>
             <a href="#">Sitemap</a>
           </li>
-          <li class="footer-nav--link-box--column border-bottom">
+          <li class="footer-nav--link-box--column border-bottom-mob">
             <h4>Community</h4>
             <a href="#">Developers</a>
             <a href="#">Referrals</a>

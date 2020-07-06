@@ -73,11 +73,12 @@ nav {
 .header--box--nav--list-item--try-button:hover {
   cursor: pointer;
   border: 1px solid black;
+  background-color: #f5f5f5;
 }
 
 section {
   width: 100%;
-  padding-top: 75px;
+  padding-top: 120px;
   padding-bottom: 75px;
 }
 
@@ -122,7 +123,7 @@ p {
 }
 
 .intro--content-box--sign-up:hover {
-  background-color: #D3D3D3;
+  background-color: #f5f5f5;
   cursor: pointer;
 }
 
@@ -188,8 +189,12 @@ h2 {
   padding-bottom: 50px;
 }
 
-.features--content-box--accordion-box {
+.features--accordion-box {
   width: 100%;
+}
+
+.features--content-box--accordion-box {
+  width: 83.33333%;
   height: auto;
   max-width: 1080px;
   margin-left: auto;
@@ -365,7 +370,7 @@ a:last-of-type {
   margin-left: 15px;
 }
 
-.border-bottom {
+.border-bottom-mob {
   border-bottom: 1px solid white;
   padding-right: 30px;
 }
@@ -390,4 +395,203 @@ a:last-of-type {
 .lang-selector:hover {
   text-decoration: underline;
   cursor: pointer;
+}
+
+.dropbox-logo {
+  display: none;
+}
+
+
+
+@media only screen and (min-width:801px) {
+  header {
+    height: 90px;
+    position: fixed;
+  }
+
+  main {
+    padding-top: 80px;
+  }
+
+
+  .header--box--nav {
+    padding-top: 30px;
+  }
+
+  .dropbox-logo {
+    display: block;
+    margin-right: 80%;
+  }
+
+  .box-logo {
+    margin-top: -5px;
+    width: 100%;
+    height: auto;
+  }
+
+  section {
+    padding: 120px 0;
+  }
+
+  h5 {
+    font-size: 28px;
+  }
+
+  h1 {
+    font-size: 56px;
+  }
+
+  h2 {
+    font-size: 48px;
+  }
+
+  h3 {
+    font-size: 48px;
+    margin-left: -60px;
+  }
+
+  .intro {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+  }
+
+  .intro--content-box {
+    width: 40%;
+    margin: 0;
+    margin-left: 15%;
+    margin-right: 10%;
+  }
+
+  p {
+    font-size: 24px;
+  }
+
+  .intro--content-box--sign-up {
+    margin-top: 10px;
+    margin-bottom: 25px;
+  }
+
+  .intro--image-container {
+    width: 50%;
+    display: block;
+  }
+
+  .intro--image-container--image {
+    max-width: 80%;
+    height: auto;
+  }
+
+  .features {
+    display: flex;
+    flex-flow: row wrap;
+  }
+
+  .features--content-box {
+    width: 30%;
+  }
+
+  .feature--content-box--feature-list--list-item {
+    font-size: 21px;
+  }
+
+  .features--content-box--image-container {
+    width: 40%;
+    margin-left: 10%;
+    margin-bottom: 18%;
+  }
+
+  .features--content-box--accordion-box {
+    width: 100%;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: flex-start;
+  }
+
+  .features--accordion-box {
+    width: 100%;
+  }
+
+  #accordion1 {
+    padding-right: 77%;
+  }
+
+  #accordion2 {
+    padding-right: 65%;
+  }
+
+  #accordion3 {
+    padding-right: 81%;
+  }
+
+  #accordion4 {
+    padding-right: 71%;
+  }
+
+  #accordion5 {
+    padding-right: 64.5%;
+  }
+
+  #accordion6 {
+    padding-right: 63.8%;
+  }
+
+  .get-free--content-box {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+  }
+
+  .sign-up-bottom {
+    padding: 3px 64px;
+  }
+
+  .footer-nav--link-box {
+    justify-content: space-between;
+    margin-left: 200px;
+  }
+
+  .footer-nav--link-box--column {
+    margin-right: 0px;
+  }
+
+  .border-bottom-mob {
+    border-bottom: 0;
+  }
+
+  .border-bottom-pc {
+    border-bottom: 1px solid white;
+    padding-right: 25px;
+  }
+
+  .sub-footer {
+    margin-left: 210px;
+  }
+
+  .lang-selector {
+    padding-left: 0;
+  }
+
+  #panel2 {
+    padding-right: 25%;
+  }
+
+  .panel-text {
+    font-size: 20px;
+    padding-right: 30%;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 }
