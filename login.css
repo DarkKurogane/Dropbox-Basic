@@ -243,7 +243,6 @@ main {
   background-color: #0070e0;
   border-radius: 4px;
   margin-left: 169px;
-  border: 1px solid black;
   padding: 5px 15px;
 }
 
@@ -335,6 +334,14 @@ h3 {
 
 .lang-selector:hover {
   text-decoration: underline;
+}
+
+.none {
+  display: none;
+}
+
+.static {
+  display: static;
 }
 
 @media only screen and (max-width:801px) {
