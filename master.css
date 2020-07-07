@@ -201,52 +201,80 @@ h2 {
   margin-right: auto;
 }
 
+.features--content-box--accordion-box--acc-heading {
+  font-size: 18px;
+}
+
+.features--content-box--accordion-box--acc-icon {
+  margin-top: 10px;
+  margin-right: 5px;
+}
+
 #accordion1 {
+  width: 100%;
   border-top: 1px solid #A9A9A9;
   padding: 30px 0;
-  padding-right: 20%;
+  padding-top: 30px;
+  padding-bottom: 10px;
   cursor: pointer;
-  font-size: 18px;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
 }
 
 #accordion2 {
+  width: 100%;
   text-align: left;
-  padding: 30px 0;
-  padding-right: 10%;
+  padding-top: 30px;
+  padding-bottom: 10px;
   cursor: pointer;
-  font-size: 18px;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
 }
 
 #accordion3 {
+  width: 100%;
   text-align: left;
-  padding: 30px 0;
-  padding-right: 34%;
+  padding-top: 30px;
+  padding-bottom: 10px;
   cursor: pointer;
-  font-size: 18px;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
 }
 
 #accordion4 {
+  width: 100%;
   text-align: left;
-  padding: 30px 0;
-  padding-right: 30%;
+  padding-top: 30px;
+  padding-bottom: 10px;
   cursor: pointer;
-  font-size: 18px;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
 }
 
 #accordion5 {
+  width: 100%;
   text-align: left;
-  padding: 30px 0;
-  padding-right: 15%;
+  padding-top: 30px;
+  padding-bottom: 10px;
   cursor: pointer;
-  font-size: 18px;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
 }
 
 #accordion6 {
+  width: 100%;
   text-align: left;
-  padding: 30px 0;
-  padding-right: 15%;
+  padding-top: 30px;
+  padding-bottom: 10px;
   cursor: pointer;
-  font-size: 18px;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
 }
 
 
@@ -505,30 +533,6 @@ a:last-of-type {
 
   .features--accordion-box {
     width: 100%;
-  }
-
-  #accordion1 {
-    padding-right: 77%;
-  }
-
-  #accordion2 {
-    padding-right: 65%;
-  }
-
-  #accordion3 {
-    padding-right: 81%;
-  }
-
-  #accordion4 {
-    padding-right: 71%;
-  }
-
-  #accordion5 {
-    padding-right: 64.5%;
-  }
-
-  #accordion6 {
-    padding-right: 63.8%;
   }
 
   .get-free--content-box {
