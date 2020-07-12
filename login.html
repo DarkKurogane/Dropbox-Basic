@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="login.css">
-    <script type="text/javascript" src="login.js"></script>
+    <script type="text/javascript" src="newLoginFix.js"></script>
     <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
 
     <title>Login - Dropbox</title>
@@ -43,37 +43,37 @@
           </div>
 
           <div class="login--form-container--ga-container">
-            <button class="login--form-container--ga-container--button blue static" type="button" name="google">
+            <button class="login--form-container--ga-container--button blue static change" type="button" name="google">
               <img class="login--form-container--ga-container--button--icon" src="images/g.png" height="16px" width="16px" alt="">
               <h2>Sign in with Google</h2>
             </button>
-            <button class="login--form-container--ga-container--button static" type="button" name="apple">
+            <button class="login--form-container--ga-container--button static change" type="button" name="apple">
               <img class="login--form-container--ga-container--button--icon" src="images/a.png" height="18px" width="15px" alt="">
               <h2>Sign in with Apple</h2>
             </button>
           </div>
 
           <div class="login--form-container--form">
-            <span class="login--form-container--form--liner static">or</span>
+            <span class="login--form-container--form--liner static change">or</span>
             <form class="login--form-container--form--input" action="index.html" method="post">
-              <input class="login--form-container--form--credentials-input none" type="user-fname" name="register-fname" value="" placeholder="First name" autocomplete="off">
-              <input class="login--form-container--form--credentials-input none" type="user-lname" name="register-lname" value="" placeholder="Last name" autocomplete="off">
+              <input class="login--form-container--form--credentials-input none change" type="user-fname" name="register-fname" value="" placeholder="First name" autocomplete="off">
+              <input class="login--form-container--form--credentials-input none change" type="user-lname" name="register-lname" value="" placeholder="Last name" autocomplete="off">
               <input class="login--form-container--form--credentials-input" type="email" name="login-email" value="" placeholder="Email" autocomplete="off">
               <input class="login--form-container--form--credentials-input" type="password" name="login_password" value="" autocomplete="off" placeholder="Password">
             </form>
             <div class="login--form-container--form-actions">
-              <input class="login--form-container--form-actions--check static" type="checkbox" name="remember-me" checked="">
-              <span class="static">Remember me</span>
-              <button class="sign-in-button static" type="submit" name="button">Sign in</button>
-              <input class="login--form-container--form-actions--check none" type="checkbox" name="terms" checked="">
-              <span class="none">I agree to
-                <a href="#">Dropbox terms.</a>
+              <input class="login--form-container--form-actions--check static change" type="checkbox" name="remember-me" checked="">
+              <span class="static change">Remember me</span>
+              <button class="sign-in-button static change" type="submit" name="button">Sign in</button>
+              <input class="login--form-container--form-actions--check none change" type="checkbox" name="terms" checked="">
+              <span class="none change termstext">I agree to
+                <a class = "login--form-container--forgot--link" href="#">Dropbox terms.</a>
               </span>
-              <button class="create-acc-but none" type="submit" name="button">Create an account</button>
+              <button class="create-acc none change" type="submit" name="button">Create an account</button>
             </div>
             <div class="login--form-container--forgot">
-              <a class="login--form-container--forgot--link static" href="#">Forgot your password?</a>
-              <button class="login--form-container--ga-container--button blue none" type="button" name="google">
+              <a class="login--form-container--forgot--link static change" href="#">Forgot your password?</a>
+              <button class="g login--form-container--ga-container--button blue none change" type="button" name="google">
                 <img class="login--form-container--ga-container--button--icon" src="images/g.png" height="16px" width="16px" alt="">
                 <h2>Sign in with Google</h2>
               </button>

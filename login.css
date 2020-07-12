@@ -172,6 +172,10 @@ main {
   margin-bottom: 20px;
 }
 
+.g {
+  width: 100%;
+}
+
 .login--form-container--ga-container--button:hover {
   border-color: rgba(0,0,0,0.1);
   background-color: #5496ff;
@@ -238,12 +242,27 @@ main {
   cursor: pointer;
 }
 
+.termstext {
+  font-size: 14px;
+  color: grey;
+}
+
 .sign-in-button {
   color: #fff;
   background-color: #0070e0;
   border-radius: 4px;
   margin-left: 169px;
   padding: 5px 15px;
+}
+
+.create-acc {
+  padding: 7px 25px;
+  background-color: #0070e0;
+  color: #fff;
+  border-radius: 4px;
+  font-size: 14px;
+  cursor: pointer;
+  margin-left: auto;
 }
 
 .sign-in-button:hover {
@@ -377,7 +396,12 @@ h3 {
   }
 
   .sign-in-button {
-    margin-left: 103px;
+    margin-left: auto;
+  }
+
+  .g {
+    padding: 8px 0;
+    width: 100%;
   }
 
   p {
