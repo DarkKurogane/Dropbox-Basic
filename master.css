@@ -210,30 +210,6 @@ h2 {
   margin-right: 5px;
 }
 
-#accordion1:focus {
-  outline: none;
-}
-
-#accordion2:focus {
-  outline: none;
-}
-
-#accordion3:focus {
-  outline: none;
-}
-
-#accordion4:focus {
-  outline: none;
-}
-
-#accordion5:focus {
-  outline: none;
-}
-
-#accordion6:focus {
-  outline: none;
-}
-
 #accordion1 {
   width: 100%;
   border-top: 1px solid #A9A9A9;
@@ -308,6 +284,14 @@ h2 {
 
 .borderless {
   border-bottom: 0;
+}
+
+.borderly:focus {
+  outline: none;
+}
+
+.borderless:focus {
+  outline: none;
 }
 
 #panel {
