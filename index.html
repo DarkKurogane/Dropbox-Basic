@@ -3,20 +3,60 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- this should also be main.css :) its a convention  -->
     <link rel="stylesheet" href="master.css">
-    <script type="text/javascript" src="main.js">
-
-    </script>
+    
     <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
 
     <title>Dropbox Basic (Free account) - Dropbox</title>
   </head>
   <body>
+    <!-- 
+      I like that you have some methodology in writing css classes. I would recommend you to check out
+      Block Element Modifier (BEM) Methodology. Its most common one in my experience, and lot of companies are using it.
+      Fun fact: Russians from Yandex made it if I remember correctly, and it's awesome! :D 
+    -->
     <header class="header">
       <nav class="header--box">
         <ul class="header--box--nav">
           <li>
             <a href="#">
+              <!-- 
+                When you import svg like this you can't control it with css. 
+                If you do require manipulating svg (which can be really awesome, since you can write animations in css)
+                you can open svg with text editor and just paste code in HTML
+
+                This is your Glyph_blue.svg image
+                <svg width="36" height="32" viewBox="0 0 36 32" xmlns="http://www.w3.org/2000/svg"><title>Glyph/Dropbox</title><g transform="translate(-1)" fill="#0061FF" fill-rule="evenodd"><path d="M0.948051948 6.42987013L9.98077922 12.1844156 19.0136364 6.42987013 9.98103896 0.675324675z"/><path d="M19 6.42987013L28.0328571 12.1844156 37.0657143 6.42987013 28.0331169 0.675324675z"/><path d="M0.948051948 17.8585714L9.98090909 23.6132468 19.0137662 17.8585714 9.98090909 12.1038961z"/><path d="M28.032987 12.1038961L19 17.8585714 28.032987 23.6132468 37.0658442 17.8585714z"/><path d="M10.038961 25.5202597L19.0718182 31.2749351 28.1048052 25.5202597 19.0718182 19.7662338z"/></g></svg>
+
+                so you can wrap it in span, and if you need you can add some classes to these <g> or <path> elements. 
+                <span class="box-logo">
+                  <svg width="36" height="32" viewBox="0 0 36 32" xmlns="http://www.w3.org/2000/svg">
+                    <title>Glyph/Dropbox</title>
+                    <g transform="translate(-1)" fill="#0061FF" fill-rule="evenodd">
+                      <path class="custom-svg-class" d="M0.948051948 6.42987013L9.98077922 12.1844156 19.0136364 6.42987013 9.98103896 0.675324675z"/>
+                      <path d="M19 6.42987013L28.0328571 12.1844156 37.0657143 6.42987013 28.0331169 0.675324675z"/>
+                      <path d="M0.948051948 17.8585714L9.98090909 23.6132468 19.0137662 17.8585714 9.98090909 12.1038961z"/>
+                      <path d="M28.032987 12.1038961L19 17.8585714 28.032987 23.6132468 37.0658442 17.8585714z"/>
+                      <path d="M10.038961 25.5202597L19.0718182 31.2749351 28.1048052 25.5202597 19.0718182 19.7662338z"/>
+                    </g>
+                  </svg>
+                </span>
+
+                and you can do in CSS something like 
+
+                .box-logo path {
+                  transition: 0.3s ease-in;
+                }
+
+                .box-logo:hover .custom-svg-class {
+                  fill: pink;
+                }
+
+                This should change hovering state of some element inside dropbox logo.
+                SVG is really interesting stuff since it behaves like html, but you get vectors which are full scalable on all resolutions. 
+
+              -->
               <img class="box-logo" src="images/Glyph_blue.svg" alt="Dropbox logo" width="30px" height="28px;">
             </a>
           </li>
@@ -91,51 +131,51 @@
         </article>
         <div class="features--accordion-box">
         <div class="features--content-box--accordion-box">
-            <button class="borderly" id="accordion1">
+            <button class="borderly js-accordion-button" id="accordion1">
               <p class="features--content-box--accordion-box--acc-heading">Is Dropbox Basic right for me?</p>
               <img class="features--content-box--accordion-box--acc-icon" src="images/arrow.png" height="10px" width="19px" alt="">
             </button>
-            <div id="panel">
+            <div class="js-accordion-content" id="panel">
               <p class="panel-text">Dropbox Basic is our entry-level plan, offering 2 GB of space that you can use to store and access your files from multiple devices.</p>
             </div>
 
-            <button class="borderly" id="accordion2">
+            <button class="borderly js-accordion-button" id="accordion2">
               <p class="features--content-box--accordion-box--acc-heading">How much space does Dropbox Basic include?</p>
               <img class="features--content-box--accordion-box--acc-icon" src="images/arrow.png" height="10px" width="19px" alt="">
             </button>
-            <div id="panel2">
+            <div class="js-accordion-content" id="panel2">
               <p class="panel-text">You can store 2 GB of files with Dropbox Basic. We also offer paid plans with 2 TB or more of storage.</p>
             </div>
 
-            <button class="borderly" id="accordion3">
+            <button class="borderly js-accordion-button" id="accordion3">
               <p class="features--content-box--accordion-box--acc-heading">Is Dropbox Basic secure?</p>
               <img class="features--content-box--accordion-box--acc-icon" src="images/arrow.png" height="10px" width="19px" alt="">
             </button>
-            <div id="panel3">
+            <div class="js-accordion-content" id="panel3">
               <p class="panel-text">The security of your files is our top priority. Dropbox protects files in transit between our apps and our servers, and at rest. We’ve also created a privacy policy that clearly describes when we collect your information and the steps we take to protect it. In addition, we offer tools like two-step verification and an account security page where you can easily monitor linked devices, active web sessions, and third-party apps with access to your account. You can learn more about how we keep your files safe on our Security page.</p>
             </div>
 
-            <button class="borderly" id="accordion4">
+            <button class="borderly js-accordion-button" id="accordion4">
               <p class="features--content-box--accordion-box--acc-heading">What devices can you use Dropbox on?</p>
               <img class="features--content-box--accordion-box--acc-icon" src="images/arrow.png" height="10px" width="19px" alt="">
             </button>
-            <div id="panel4">
+            <div class="js-accordion-content" id="panel4">
               <p class="panel-text">The Dropbox desktop app runs on Windows, Mac, and Linux operating systems. Apps are also available for iOS, Android, and Windows mobile devices. And you can transfer and download files from dropbox.com using most modern browsers. For more details, visit our help center article on system requirements.</p>
             </div>
 
-            <button class="borderly" id="accordion5">
+            <button class="borderly js-accordion-button" id="accordion5">
               <p class="features--content-box--accordion-box--acc-heading">How do I back up important files with Dropbox?</p>
               <img class="features--content-box--accordion-box--acc-icon" src="images/arrow.png" height="10px" width="19px" alt="">
             </button>
-            <div id="panel5">
+            <div class="js-accordion-content" id="panel5">
               <p class="panel-text">You can easily back up files to Dropbox by installing our desktop and mobile apps, or by signing in to dropbox.com. With our desktop app installed, all you need to do is save files to the Dropbox folder on your computer. In our mobile app, you can upload files from your phone or tablet and use your device’s camera to scan documents to Dropbox. And on the web, you can drag and drop files from your desktop right into your browser to upload them to Dropbox.</p>
             </div>
 
-            <button class="borderly" id="accordion6">
+            <button class="borderly js-accordion-button" id="accordion6">
               <p class="features--content-box--accordion-box--acc-heading">Can I keep my work and personal files separate?</p>
               <img class="features--content-box--accordion-box--acc-icon" src="images/arrow.png" height="10px" width="19px" alt="">
             </button>
-            <div id="panel6">
+            <div class="js-accordion-content" id="panel6">
               <p class="panel-text">Yes! Dropbox Business users can have both a personal and work Dropbox on any computer, mobile device, and on dropbox.com. This means you can keep your files separate and accessible from anywhere. To learn more, visit our help center article on connecting personal and work Dropbox accounts.</p>
             </div>
 
@@ -153,6 +193,21 @@
         </article>
 
       </section>
+
+      <!-- 
+        Here is a tip. 
+        When you hardcode your links, instead of # inside href, put javascript:;
+        <a href="javascript:;">someText</a>
+        Now when you click on link, nothing will happen. If you put # its reference to ID like in javascript it will jump on start of page
+        because its trying to find id of HTML element on page, and since it's # browser figures out you want to jump to start.
+        If you give some element in middle of page id, and you put it inside href it will jump to middle of page to show element.
+        You can add in css
+        html, body {
+          scroll-behavior: smooth;
+        }
+        That should make fine transition when you are making one page sites where links are references to parts of that one page. 
+        One of the downsides of scroll-behavior is that it's not supported on Safari browser which is on iOS.
+      -->
 
       <footer class="footer-nav">
         <ul class="footer-nav--link-box">
@@ -199,7 +254,10 @@
         <div class="sub-footer">
           <button type="button" name="lang-selector" class="lang-selector">English (United States)</button>
         </div>
+        
+        <script type="text/javascript" src="main.js">
 
+        </script>
       </footer>
     </main>
   </body>
