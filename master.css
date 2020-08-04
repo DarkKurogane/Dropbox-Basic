@@ -289,37 +289,37 @@ h2 {
 #panel {
   background-color: #fff;
   overflow: hidden;
-  display: none;
+  /* display: none; */
 }
 
 #panel2 {
   background-color: #fff;
   overflow: hidden;
-  display: none;
+  /* display: none; */
 }
 
 #panel3 {
   background-color: #fff;
   overflow: hidden;
-  display: none;
+  /* display: none; */
 }
 
 #panel4 {
   background-color: #fff;
   overflow: hidden;
-  display: none;
+  /* display: none; */
 }
 
 #panel5 {
   background-color: #fff;
   overflow: hidden;
-  display: none;
+  /* display: none; */
 }
 
 #panel6 {
   background-color: #fff;
   overflow: hidden;
-  display: none;
+  /* display: none; */
 }
 
 .panel-text {
@@ -424,6 +424,13 @@ a:last-of-type {
   display: none;
 }
 
+.js-accordion-content {
+  display: none;
+}
+
+.js-accordion-active {
+  display: block;
+}
 
 
 @media only screen and (min-width:801px) {
