@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- this should also be main.css :) its a convention  -->
     <link rel="stylesheet" href="master.css">
     <script type="text/javascript" src="main.js">
 
@@ -12,11 +13,52 @@
     <title>Dropbox Basic (Free account) - Dropbox</title>
   </head>
   <body>
+    <!-- 
+      I like that you have some methodology in writing css classes. I would recommend you to check out
+      Block Element Modifier (BEM) Methodology. Its most common one in my experience, and lot of companies are using it.
+      Fun fact: Russians from Yandex made it if I remember correctly, and it's awesome! :D 
+    -->
     <header class="header">
       <nav class="header--box">
         <ul class="header--box--nav">
           <li>
             <a href="#">
+              <!-- 
+                When you import svg like this you can't control it with css. 
+                If you do require manipulating svg (which can be really awesome, since you can write animations in css)
+                you can open svg with text editor and just paste code in HTML
+
+                This is your Glyph_blue.svg image
+                <svg width="36" height="32" viewBox="0 0 36 32" xmlns="http://www.w3.org/2000/svg"><title>Glyph/Dropbox</title><g transform="translate(-1)" fill="#0061FF" fill-rule="evenodd"><path d="M0.948051948 6.42987013L9.98077922 12.1844156 19.0136364 6.42987013 9.98103896 0.675324675z"/><path d="M19 6.42987013L28.0328571 12.1844156 37.0657143 6.42987013 28.0331169 0.675324675z"/><path d="M0.948051948 17.8585714L9.98090909 23.6132468 19.0137662 17.8585714 9.98090909 12.1038961z"/><path d="M28.032987 12.1038961L19 17.8585714 28.032987 23.6132468 37.0658442 17.8585714z"/><path d="M10.038961 25.5202597L19.0718182 31.2749351 28.1048052 25.5202597 19.0718182 19.7662338z"/></g></svg>
+
+                so you can wrap it in span, and if you need you can add some classes to these <g> or <path> elements. 
+                <span class="box-logo">
+                  <svg width="36" height="32" viewBox="0 0 36 32" xmlns="http://www.w3.org/2000/svg">
+                    <title>Glyph/Dropbox</title>
+                    <g transform="translate(-1)" fill="#0061FF" fill-rule="evenodd">
+                      <path class="custom-svg-class" d="M0.948051948 6.42987013L9.98077922 12.1844156 19.0136364 6.42987013 9.98103896 0.675324675z"/>
+                      <path d="M19 6.42987013L28.0328571 12.1844156 37.0657143 6.42987013 28.0331169 0.675324675z"/>
+                      <path d="M0.948051948 17.8585714L9.98090909 23.6132468 19.0137662 17.8585714 9.98090909 12.1038961z"/>
+                      <path d="M28.032987 12.1038961L19 17.8585714 28.032987 23.6132468 37.0658442 17.8585714z"/>
+                      <path d="M10.038961 25.5202597L19.0718182 31.2749351 28.1048052 25.5202597 19.0718182 19.7662338z"/>
+                    </g>
+                  </svg>
+                </span>
+
+                and you can do in CSS something like 
+
+                .box-logo path {
+                  transition: 0.3s ease-in;
+                }
+
+                .box-logo:hover .custom-svg-class {
+                  fill: pink;
+                }
+
+                This should change hovering state of some element inside dropbox logo.
+                SVG is really interesting stuff since it behaves like html, but you get vectors which are full scalable on all resolutions. 
+
+              -->
               <img class="box-logo" src="images/Glyph_blue.svg" alt="Dropbox logo" width="30px" height="28px;">
             </a>
           </li>
@@ -153,6 +195,21 @@
         </article>
 
       </section>
+
+      <!-- 
+        Here is a tip. 
+        When you hardcode your links, instead of # inside href, put javascript:;
+        <a href="javascript:;">someText</a>
+        Now when you click on link, nothing will happen. If you put # its reference to ID like in javascript it will jump on start of page
+        because its trying to find id of HTML element on page, and since it's # browser figures out you want to jump to start.
+        If you give some element in middle of page id, and you put it inside href it will jump to middle of page to show element.
+        You can add in css
+        html, body {
+          scroll-behavior: smooth;
+        }
+        That should make fine transition when you are making one page sites where links are references to parts of that one page. 
+        One of the downsides of scroll-behavior is that it's not supported on Safari browser which is on iOS.
+      -->
 
       <footer class="footer-nav">
         <ul class="footer-nav--link-box">
